@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/general.css">
+  <title>Book Shelter</title>
+</head>
+
+<body>
+
+  <h1 class="visually-hidden"></h1>
+
+  <header class="header">
+
+    <div class="header__container d-flex align-items-center">
+
+      <!-- LOGO -->
+      <a class="siteLogo" href="#"><img src="./image/sitelogo-dark.svg" alt="site logo" width="226" height="44"></a>
+
+
+      <!-- SEARCH INPUT -->
+      <div class="header__search-wrapper d-flex align-items-center justify-content-center w-100">
+        <i class="search-icon border-end-0"><img src="./image/search.svg" alt="search icon" width="19" height="18"></i>
+        <input class="header__search-input border-start-0 border-0 w-100" type="text" placeholder="Search books">
+
+      </div>
+
+
+
+      <div class="ms-auto">
+
+        <img src="./image/sun.svg" alt="weather is sun" width="23" height="23">
+
+        <button id="logoutBtn" class="btn btn-primary">Logout</button>
+
+      </div>
+
+    </div>
+
+    <div class="header__top-box d-flex align-items-center">
+
+      <p class="result__num">showing result</p>
+
+      <button class="sort__newest-btn d-flex align-items-center border-0">
+
+        <img class="calendar__icon" src="./image/calendar.svg" alt="calendar icon" width="24" height="24">
+        Order by newest
+
+      </button>
+
+    </div>
+
+
+  </header>
+
+
+  <main class="main">
+
+    <div class="main__container d-flex">
+
+      <!-- BOOKMARK LIST -->
+      <ul class="bookmark__list list-unstyled">
+
+        <li class="bookmark__text">
+
+          <h2 class="bookmark__title">Bookmarks</h2>
+
+          <p class="bookmark__desc">If you don't like to read, you haven't found the right book</p>
+
+        </li>
+
+        <li class="bookmark__item d-flex align-items-center">
+
+          <div class="bookmark__info">
+
+            <h3 class="book__name">Python</h3>
+
+            <p class="book__info">David M.Beazley</p>
+
+          </div>
+
+          <a href="#"><img src="./image/read.svg" alt="read icon"></a>
+
+          <button class="bg-transparent border-0 ms-auto"><img src="./image/delete.svg" alt="delete icon"></button>
+
+        </li>
+
+      </ul>
+
+
+      <!-- BOOKS LIST -->
+      <ul class="books__list list-unstyled d-flex flex-wrap">
+
+        <li class="books__item">
+
+          <div class="books__img-box">
+
+            <img src="./image/books.png" alt="books image" width="201" height="202">
+
+          </div>
+
+          <h3 id="books__name" class="m-p-0">Python</h3>
+
+          <p id="books__author" class="m-p-0">David M. Beazley</p>
+
+          <span id="books__year">2009</span>
+
+          <div class="btn__link-wrapper">
+
+            <button id="bookmarkBtn" class="border-0">Bookmark</button>
+
+            <a class="modal__link text-decoration-none" href="#">More Info</a>
+
+          </div>
+
+          <a class="read__link text-decoration-none d-flex mt-1" href="#">Read</a>
+
+        </li>
+
+        <li class="books__item">
+
+          <div class="books__img-box">
+
+            <img src="./image/books.png" alt="books image" width="201" height="202">
+
+          </div>
+
+          <h3 id="books__name" class="m-p-0">Python</h3>
+
+          <p id="books__author" class="m-p-0">David M. Beazley</p>
+
+          <span id="books__year">2009</span>
+
+          <div class="btn__link-wrapper">
+
+            <button id="bookmarkBtn" class="border-0">Bookmark</button>
+
+            <a class="modal__link text-decoration-none" href="#">More Info</a>
+
+          </div>
+
+          <a class="read__link text-decoration-none d-flex mt-1" href="#">Read</a>
+
+        </li>
+
+        <li class="books__item">
+
+          <div class="books__img-box">
+
+            <img src="./image/books.png" alt="books image" width="201" height="202">
+
+          </div>
+
+          <h3 id="books__name" class="m-p-0">Python</h3>
+
+          <p id="books__author" class="m-p-0">David M. Beazley</p>
+
+          <span id="books__year">2009</span>
+
+          <div class="btn__link-wrapper">
+
+            <button id="bookmarkBtn" class="border-0">Bookmark</button>
+
+            <a class="modal__link text-decoration-none" href="#">More Info</a>
+
+          </div>
+
+          <a class="read__link text-decoration-none d-flex mt-1" href="#">Read</a>
+
+        </li>
+
+        <li class="books__item">
+
+          <div class="books__img-box">
+
+            <img src="./image/books.png" alt="books image" width="201" height="202">
+
+          </div>
+
+          <h3 id="books__name" class="m-p-0">Python</h3>
+
+          <p id="books__author" class="m-p-0">David M. Beazley</p>
+
+          <span id="books__year">2009</span>
+
+          <div class="btn__link-wrapper">
+
+            <button id="bookmarkBtn" class="border-0">Bookmark</button>
+
+            <a class="modal__link text-decoration-none" href="#">More Info</a>
+
+          </div>
+
+          <a class="read__link text-decoration-none d-flex mt-1" href="#">Read</a>
+
+        </li>
+
+      </ul>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <script src="./js/script.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/auth.js"></script>
+</body>
+
+</html>

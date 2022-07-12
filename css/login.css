@@ -1,0 +1,79 @@
+body {
+  background-image: url("../image/login_background.png");
+}
+
+.mainContainer {
+  max-width: 300px;
+  height: 100vh;
+}
+
+.siteLogo {
+  margin-bottom: 50px;
+}
+
+.icon {
+  padding: 12px 9px 12.5px 13px;
+  border: 1px solid #FFFFFF;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.loginInput {
+  border: 1px solid #FFFFFF;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  padding: 11px 85px 11px 10px;
+}
+
+.loginInput::placeholder {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffffb6;
+}
+
+.loginInput:focus {
+  outline: none;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  padding: 11px 85px 11px 10px;
+}
+
+.pass-input-wrapper {
+  margin-top: 20px;
+  margin-bottom: 43px;
+}
+
+.loginBtn {
+  padding: 13px 123px;
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0D75FF;
+}
+
+.forgotPassLink {
+  margin-left: auto;
+  max-width: 150px;
+  margin-top: 11px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
